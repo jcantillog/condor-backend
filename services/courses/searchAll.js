@@ -1,6 +1,6 @@
-var course = require('../../schemas/course');
+var Course = require('../../models/course');
 
 exports.searchAll = async function (req, res, next) {
-    const allCourses = await course.find({});
+    const allCourses = await Course.find({});
     res.send(allCourses);
 };
