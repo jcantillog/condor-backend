@@ -4,25 +4,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mongoose = require('mongoose');
 var cors = require('cors');
 
 // setting routers
 var coursesRouter = require('./interfaces/http/routes/courses');
 
-// setting connection
-mongoose.connect
-(
-    'mongodb://root:bdatos1234@ds053459.mlab.com:53459/condorlabs',
-    {useNewUrlParser: true}
-);
-
 // setting express app
 var app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
