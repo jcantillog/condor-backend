@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
     }
 });
 
-router.get('/:page', function(req, res, next) {
+router.get('/:name/:page', function(req, res, next) {
     try {
         coursesServices.searchCoursesByName(req, res, next);
     } catch (error) {
