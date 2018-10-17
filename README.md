@@ -1,6 +1,7 @@
 # Running the project
- - Download the code
+ - Clone the repo
 - Using the terminal, go to the project folder
+- Make sure you're on develop branch
 - Run 'npm install' for installing all the project dependencies
 - Run 'npm start' to get the app running on localhost
  # Endpoints
